@@ -5,7 +5,7 @@ const experiences = [
   {
     company: "KODNEST",
     role: "Java Full Stack Developer Intern",
-    period: "Feb 2025 – Present",
+    period: "Aug 2024 – Present",
     description: "Building Java & Spring Boot applications, backend APIs, database design, authentication and role-based features.",
     current: true
   },

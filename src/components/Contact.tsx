@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, MapPin, Send } from "lucide-react";
+import { Mail, Linkedin, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -67,6 +67,20 @@ const Contact = () => {
                 </div>
               </a>
 
+              {/* Phone */}
+              <a
+                href="tel:+917411041268"
+                className="flex items-center gap-4 p-4 rounded-xl bg-secondary/50 hover:bg-secondary transition-colors duration-300 group"
+              >
+                <div className="p-3 bg-primary/20 rounded-lg group-hover:bg-primary/30 transition-colors">
+                  <Phone className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Phone</p>
+                  <p className="text-foreground font-medium">+91 7411041268</p>
+                </div>
+              </a>
+
               {/* Location */}
               <div className="flex items-center gap-4 p-4 rounded-xl bg-secondary/50">
                 <div className="p-3 bg-accent/20 rounded-lg">
@@ -78,15 +92,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
-            <Button 
-              size="lg" 
-              className="w-full bg-primary text-primary-foreground hover:bg-primary/90 glow-primary"
-              onClick={() => window.location.href = 'mailto:naasha224@gmail.com'}
-            >
-              <Send className="w-4 h-4 mr-2" />
-              Send Me an Email
-            </Button>
           </div>
         </motion.div>
       </div>
