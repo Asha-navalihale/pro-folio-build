@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github, ShoppingCart, Eye } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ShoppingCart, Eye } from "lucide-react";
 
 const projects = [
   {
@@ -104,17 +103,6 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {/* Actions */}
-                <div className="flex gap-3">
-                  <Button variant="outline" size="sm" className="border-border hover:border-primary hover:bg-primary/10">
-                    <Github className="w-4 h-4 mr-2" />
-                    Code
-                  </Button>
-                  <Button variant="outline" size="sm" className="border-border hover:border-primary hover:bg-primary/10">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Demo
-                  </Button>
-                </div>
               </div>
             </motion.div>
           ))}
