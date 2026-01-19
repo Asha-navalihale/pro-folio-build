@@ -65,13 +65,6 @@ const Navbar = () => {
                 {link.label}
               </button>
             ))}
-            <Button 
-              size="sm" 
-              className="bg-primary text-primary-foreground hover:bg-primary/90"
-              onClick={() => handleNavClick("#contact")}
-            >
-              Hire Me
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -101,12 +94,6 @@ const Navbar = () => {
                   {link.label}
                 </button>
               ))}
-              <Button 
-                className="bg-primary text-primary-foreground hover:bg-primary/90 w-full mt-2"
-                onClick={() => handleNavClick("#contact")}
-              >
-                Hire Me
-              </Button>
             </div>
           </motion.div>
         )}
