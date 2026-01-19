@@ -119,7 +119,7 @@ const Hero = () => {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/ashanavalihale"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300"
