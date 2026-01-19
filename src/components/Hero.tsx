@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
   return (
@@ -27,6 +28,23 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center max-w-4xl mx-auto"
         >
+          {/* Profile Photo */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="mb-8"
+          >
+            <div className="relative inline-block">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full blur-xl opacity-50 animate-pulse-glow" />
+              <img 
+                src={profilePhoto} 
+                alt="Asha Navalihale" 
+                className="relative w-36 h-36 md:w-44 md:h-44 rounded-full object-cover border-4 border-primary/30 shadow-2xl"
+              />
+            </div>
+          </motion.div>
+
           {/* Greeting */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -82,14 +100,6 @@ const Hero = () => {
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View My Work
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-border text-foreground hover:bg-secondary px-8"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Get In Touch
             </Button>
           </motion.div>
 
